@@ -30,11 +30,11 @@ random.seed(manualSeed)
 torch.manual_seed(manualSeed)
 
 #データセットの、各データへのパスのフォーマット　make_datapath_listへの引数
-dataset_path = "./dataset/train/domainB/**/*.wav"
+dataset_path = "./dataset/train/domainA/**/*.wav"
 #学習過程を見るための、サンプル音声のパス(フォーマットではなく普通のパスとして指定)
-sample_audio_path = "./dataset/train/domainB/ver2/jvs010/VOICEACTRESS100_010.wav"
+sample_audio_path = "./dataset/train/domainA/jvs002_0.wav"
 #結果を出力するためのディレクトリ
-output_dir = "./output/vocoder/train/"
+output_dir = "./output/"
 #使用するデバイス
 device = "cuda:0"
 #バッチサイズ
