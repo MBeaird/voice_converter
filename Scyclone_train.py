@@ -31,10 +31,10 @@ random.seed(manualSeed)
 torch.manual_seed(manualSeed)
 
 #データセットの、各データへのパスのフォーマット　make_datapath_listへの引数
-dataset_path_A = "./dataset/train/domainA/**/*.wav"
-dataset_path_B = "./dataset/train/domainB/**/*.wav"
+dataset_path_A = "./dataset/train/domainA/*.wav"
+dataset_path_B = "./dataset/train/domainB/*.wav"
 #結果を出力するためのディレクトリ
-output_dir = "./output/scyclone/train/"
+output_dir = "./output/"
 #使用するデバイス
 device = "cuda:0"
 #バッチサイズ
